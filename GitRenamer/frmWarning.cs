@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace GitRenamer
 {
-    public partial class frmMain : Form
+    public partial class frmWarning : Form
     {
-        public frmMain()
+        public frmWarning()
         {
             InitializeComponent();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            cmdContinue.Enabled = cbRead.Checked;
         }
     }
 }
